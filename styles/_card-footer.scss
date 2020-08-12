@@ -19,24 +19,57 @@ footer {
     .article-date {
         color: hsl(212, 23%, 69%);
     }
-    .share-icon {
-        width: 32px;
-        height: 32px;
-        background-color: $light-grayish;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-    }
+}
+.share-icon {
+    width: 32px;
+    height: 32px;
+    background-color: $light-grayish;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
 }
 .share-socials {
-    height: 4rem;
+    height: 4.5rem;
     background-color: hsl(217, 19%, 35%);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    padding: 1rem 2.5rem;
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: all 0.25s ease-in-out;
+    transform: translateY(100%);
+    opacity: 0;
 
     span {
-        letter-spacing: 0.2rem;
+        letter-spacing: 0.5rem;
+        color: $grayish-blue;
+        margin-right: 1rem;
+    }
+    .icons {
+        display: flex;
+        img {
+            margin-right: 1rem;
+        }
+        cursor: pointer;
+    }
+}
+.display-social {
+    transform: translateY(0);
+    opacity: 1;
+}
+.share-icon-element {
+    fill: #6e8098;
+}
+.share-icon-light-bg {
+    background-color: $desaturated-blue;
+    .share-icon-element {
+        fill: $light-grayish;
     }
 }

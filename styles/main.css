@@ -387,6 +387,8 @@ p {
   margin-bottom: 1rem;
   -webkit-box-shadow: 0 5px 50px rgba(72, 85, 106, 0.3);
           box-shadow: 0 5px 50px rgba(72, 85, 106, 0.3);
+  position: relative;
+  overflow: hidden;
 }
 
 .card-image {
@@ -469,7 +471,7 @@ footer .article-date {
   color: #9eafc2;
 }
 
-footer .share-icon {
+.share-icon {
   width: 32px;
   height: 32px;
   background-color: #ecf2f8;
@@ -484,16 +486,64 @@ footer .share-icon {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  z-index: 10;
 }
 
 .share-socials {
-  height: 4rem;
+  height: 4.5rem;
   background-color: #48556a;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  padding: 1rem 2.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 90px 1fr;
+      grid-template-columns: 90px 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 0;
 }
 
 .share-socials span {
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.5rem;
+  color: #9eafc2;
+  margin-right: 1rem;
+}
+
+.share-socials .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.share-socials .icons img {
+  margin-right: 1rem;
+}
+
+.display-social {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.share-icon-element {
+  fill: #6e8098;
+}
+
+.share-icon-light-bg {
+  background-color: #6d7f97;
+}
+
+.share-icon-light-bg .share-icon-element {
+  fill: #ecf2f8;
 }
 /*# sourceMappingURL=main.css.map */
