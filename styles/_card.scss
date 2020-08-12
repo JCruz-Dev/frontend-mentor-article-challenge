@@ -1,5 +1,31 @@
 .card-container {
-    background: yellow;
-    width: 586px;
-    height: 224px;
+    background: #fff;
+    width: 338px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.card-image {
+    height: 198px;
+    background-image: url(../images/drawers.jpg);
+    background-position: center center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card-title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    color: hsl(217, 19%, 35%);
+}
+.card-description {
+    color: hsl(214, 17%, 51%);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+.card-info {
+    padding: 2.5rem 2.5rem 1rem 2.5rem;
 }

@@ -1,5 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    background-color: hsl(210, 46%, 95%);
+    font-family: $family;
+    line-height: 1.5;
+    font-size: 13px;
+}
+h1 {
+    font-weight: $bold;
+}
+p {
+    font-weight: $mediun;
 }
