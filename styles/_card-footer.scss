@@ -14,19 +14,29 @@ footer {
     }
     .author-name {
         font-weight: $bold;
-        color: hsl(217, 19%, 35%);
+        color: $darker-grayish;
     }
     .article-date {
         color: hsl(212, 23%, 69%);
     }
-    .share--icon {
+    .share-icon {
         width: 32px;
         height: 32px;
-        background-color: hsl(210, 46%, 95%);
+        background-color: $light-grayish;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
+    }
+}
+.share-socials {
+    height: 4rem;
+    background-color: hsl(217, 19%, 35%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    span {
+        letter-spacing: 0.2rem;
     }
 }
