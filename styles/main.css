@@ -385,15 +385,15 @@ p {
           justify-content: center;
   border-radius: 10px;
   margin-bottom: 1rem;
-  -webkit-box-shadow: 0 5px 50px rgba(72, 85, 106, 0.3);
-          box-shadow: 0 5px 50px rgba(72, 85, 106, 0.3);
+  -webkit-box-shadow: 0 5px 30px rgba(72, 85, 106, 0.2);
+          box-shadow: 0 5px 30px rgba(72, 85, 106, 0.2);
   position: relative;
   overflow: hidden;
 }
 
 @media screen and (min-width: 62em) {
   .card-container {
-    width: 55%;
+    width: 53%;
     -ms-grid-columns: 40% 1fr;
         grid-template-columns: 40% 1fr;
     overflow: visible;
@@ -405,6 +405,9 @@ p {
   background-image: url(../images/drawers.jpg);
   background-position: center center;
   background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -413,6 +416,8 @@ p {
   .card-image {
     height: auto;
     border-top-right-radius: 0;
+    background-position: left;
+    border-bottom-left-radius: 10px;
   }
 }
 
