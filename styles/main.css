@@ -533,6 +533,7 @@ footer .article-date {
 @media screen and (min-width: 62em) {
   .share-icon {
     margin-left: auto;
+    margin-right: 0.5rem;
   }
 }
 
@@ -580,7 +581,7 @@ footer .article-date {
     background: #48556a;
     position: absolute;
     bottom: -10px;
-    right: calc(277.2px - 55%);
+    right: calc(277.2px - 60%);
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
   }
