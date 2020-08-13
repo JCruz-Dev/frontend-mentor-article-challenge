@@ -10,7 +10,7 @@
     position: relative;
     overflow: hidden;
     @include responsiveQuery(large) {
-        width: 50%;
+        width: 700px;
         grid-template-columns: 40% 1fr;
         overflow: visible;
     }

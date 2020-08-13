@@ -393,7 +393,7 @@ p {
 
 @media screen and (min-width: 62em) {
   .card-container {
-    width: 50%;
+    width: 700px;
     -ms-grid-columns: 40% 1fr;
         grid-template-columns: 40% 1fr;
     overflow: visible;
@@ -564,13 +564,15 @@ footer .article-date {
     height: 3.5rem;
     bottom: 6.8rem;
     right: -80px;
-    width: 35%;
+    width: 280px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     border-radius: 10px;
     -webkit-box-shadow: 0 5px 30px rgba(72, 85, 106, 0.3);
             box-shadow: 0 5px 30px rgba(72, 85, 106, 0.3);
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
   .share-socials::before {
     content: '';
@@ -580,7 +582,7 @@ footer .article-date {
     background: #48556a;
     position: absolute;
     bottom: -10px;
-    right: calc(277.2px - 60%);
+    right: 125px;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
   }

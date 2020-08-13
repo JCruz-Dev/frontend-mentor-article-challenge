@@ -57,10 +57,11 @@ footer {
         height: 3.5rem;
         bottom: 6.8rem;
         right: -80px;
-        width: 35%;
+        width: 280px;
         justify-content: center;
         border-radius: 10px;
         box-shadow: 0 5px 30px rgba($color: $darker-grayish, $alpha: 0.3);
+        grid-template-columns: 1fr 1fr;
 
         &::before {
             content: '';
@@ -70,7 +71,7 @@ footer {
             background: $darker-grayish;
             position: absolute;
             bottom: -10px;
-            right: calc(277.2px - 60%);
+            right: 125px;
             transform: rotate(45deg);
         }
     }
