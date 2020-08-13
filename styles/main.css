@@ -393,7 +393,7 @@ p {
 
 @media screen and (min-width: 62em) {
   .card-container {
-    width: 53%;
+    width: 50%;
     -ms-grid-columns: 40% 1fr;
         grid-template-columns: 40% 1fr;
     overflow: visible;
@@ -438,7 +438,6 @@ p {
   color: #6d7f97;
   line-height: 1.7;
   margin-bottom: 2rem;
-  font-size: 0.9rem;
 }
 
 .card-info {

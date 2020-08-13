@@ -10,7 +10,7 @@
     position: relative;
     overflow: hidden;
     @include responsiveQuery(large) {
-        width: 53%;
+        width: 50%;
         grid-template-columns: 40% 1fr;
         overflow: visible;
     }
@@ -44,7 +44,6 @@
     color: hsl(214, 17%, 51%);
     line-height: 1.7;
     margin-bottom: 2rem;
-    font-size: 0.9rem;
 }
 .card-info {
     padding: 2.5rem 2.5rem 1rem 2.5rem;
