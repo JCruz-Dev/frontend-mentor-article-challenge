@@ -9,6 +9,11 @@
     box-shadow: 0 5px 50px rgba($color: $darker-grayish, $alpha: 0.3);
     position: relative;
     overflow: hidden;
+    @include responsiveQuery(large) {
+        width: 55%;
+        grid-template-columns: 40% 1fr;
+        overflow: visible;
+    }
 }
 .card-image {
     height: 198px;
@@ -17,12 +22,19 @@
     background-size: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    @include responsiveQuery(large) {
+        height: auto;
+        border-top-right-radius: 0;
+    }
 }
 .card-title {
     font-size: 1rem;
     margin-bottom: 0.8rem;
     margin-top: 0;
     color: hsl(217, 19%, 35%);
+    @include responsiveQuery(large) {
+        font-size: 1.3rem;
+    }
 }
 .card-description {
     color: hsl(214, 17%, 51%);
@@ -31,4 +43,7 @@
 }
 .card-info {
     padding: 2.5rem 2.5rem 1rem 2.5rem;
+    @include responsiveQuery(large) {
+        padding: 2.5rem;
+    }
 }

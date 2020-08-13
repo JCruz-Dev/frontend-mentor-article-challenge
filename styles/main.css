@@ -391,6 +391,15 @@ p {
   overflow: hidden;
 }
 
+@media screen and (min-width: 62em) {
+  .card-container {
+    width: 55%;
+    -ms-grid-columns: 40% 1fr;
+        grid-template-columns: 40% 1fr;
+    overflow: visible;
+  }
+}
+
 .card-image {
   height: 198px;
   background-image: url(../images/drawers.jpg);
@@ -400,11 +409,24 @@ p {
   border-top-right-radius: 10px;
 }
 
+@media screen and (min-width: 62em) {
+  .card-image {
+    height: auto;
+    border-top-right-radius: 0;
+  }
+}
+
 .card-title {
   font-size: 1rem;
   margin-bottom: 0.8rem;
   margin-top: 0;
   color: #48556a;
+}
+
+@media screen and (min-width: 62em) {
+  .card-title {
+    font-size: 1.3rem;
+  }
 }
 
 .card-description {
@@ -415,6 +437,12 @@ p {
 
 .card-info {
   padding: 2.5rem 2.5rem 1rem 2.5rem;
+}
+
+@media screen and (min-width: 62em) {
+  .card-info {
+    padding: 2.5rem;
+  }
 }
 
 .main-container {
@@ -471,6 +499,13 @@ footer .article-date {
   color: #9eafc2;
 }
 
+@media screen and (min-width: 62em) {
+  footer {
+    -ms-grid-columns: 40px 1fr 1fr;
+        grid-template-columns: 40px 1fr 1fr;
+  }
+}
+
 .share-icon {
   width: 32px;
   height: 32px;
@@ -487,6 +522,12 @@ footer .article-date {
           align-items: center;
   cursor: pointer;
   z-index: 10;
+}
+
+@media screen and (min-width: 62em) {
+  .share-icon {
+    margin-left: auto;
+  }
 }
 
 .share-socials {
@@ -510,6 +551,33 @@ footer .article-date {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   opacity: 0;
+}
+
+@media screen and (min-width: 62em) {
+  .share-socials {
+    height: 3.5rem;
+    bottom: 6.8rem;
+    right: -80px;
+    width: 35%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 5px 30px rgba(72, 85, 106, 0.3);
+            box-shadow: 0 5px 30px rgba(72, 85, 106, 0.3);
+  }
+  .share-socials::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #48556a;
+    position: absolute;
+    bottom: -10px;
+    right: calc(277.2px - 55%);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
 }
 
 .share-socials span {

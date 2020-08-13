@@ -19,6 +19,9 @@ footer {
     .article-date {
         color: hsl(212, 23%, 69%);
     }
+    @include responsiveQuery(large) {
+        grid-template-columns: 40px 1fr 1fr;
+    }
 }
 .share-icon {
     width: 32px;
@@ -30,10 +33,13 @@ footer {
     align-items: center;
     cursor: pointer;
     z-index: 10;
+    @include responsiveQuery(large) {
+        margin-left: auto;
+    }
 }
 .share-socials {
     height: 4.5rem;
-    background-color: hsl(217, 19%, 35%);
+    background-color: $darker-grayish;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 1rem 2.5rem;
@@ -46,6 +52,27 @@ footer {
     transition: all 0.25s ease-in-out;
     transform: translateY(100%);
     opacity: 0;
+    @include responsiveQuery(large) {
+        height: 3.5rem;
+        bottom: 6.8rem;
+        right: -80px;
+        width: 35%;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 0 5px 30px rgba($color: $darker-grayish, $alpha: 0.3);
+
+        &::before {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: $darker-grayish;
+            position: absolute;
+            bottom: -10px;
+            right: calc(277.2px - 55%);
+            transform: rotate(45deg);
+        }
+    }
 
     span {
         letter-spacing: 0.5rem;
